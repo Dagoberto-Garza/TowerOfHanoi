@@ -22,17 +22,22 @@
 
     html,
     body {
-      height: 100%
+      height: 100%;
     }
-    #gameTower {
-      max-width: 500px;
+    #center {
+      width: 100%;
+      display: flex;
+      align-items: stretch;
+    }
+    .gameTower {
+      flex-direction: row;
+      max-width: 66%;
       max-height: 650px;
-      background-color: aqua;
-      align-self: center;
+      border-bottom: 25px solid red;
     }
-    #col {
-      border: 5px solid red;
-      width: 10px;
+    .col {
+      background-color: black;
+      width: 10%;
       height: 100px;
     }
   </style>
@@ -40,12 +45,14 @@
 </head>
 
 <body>
-
-  <div class="d-flex justify-content-around" id="gameTower">
-    <div class="d-flex flex-column" id="col"></div>
-    <div class="d-flex flex-column" id="col2"></div>
-    <div class="d-flex flex-column" id="col3"></div>
+<div id="center" class="d-flex justify-content-center">
+  <div class="d-flex justify-content-around gameTower" id="gameTower">
+    <div class="d-inline-flex col" id="col"></div>
+    <div class="d-inline-flex col" id="col2"></div>
+    <div class="d-inline-flex col" id="col3"></div>
   </div>
+</div>
+  
   
   <div class="btn btn-info" id="run" style="margin-left: 20px">run</div>
   
