@@ -5,6 +5,10 @@ let moves = 0;
 document.addEventListener('DOMContentLoaded', () => {
   
     let runBtn = document.getElementById('run');
+    let col1 = document.getElementById('col1');
+    let col2 = document.getElementById('col2');
+    let col3 = document.getElementById('col3');
+
     
     function tower(n, from_rod, to_rod, aux_rod) {
         moves++; 

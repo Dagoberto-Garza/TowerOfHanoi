@@ -24,14 +24,29 @@
     body {
       height: 100%
     }
-
+    #gameTower {
+      max-width: 500px;
+      max-height: 650px;
+      background-color: aqua;
+      align-self: center;
+    }
+    #col {
+      border: 5px solid red;
+      width: 10px;
+      height: 100px;
+    }
   </style>
   <title>TourOfHanoi</title>
 </head>
 
 <body>
-  <h1>test</h1>
- 
+
+  <div class="d-flex justify-content-around" id="gameTower">
+    <div class="d-flex flex-column" id="col"></div>
+    <div class="d-flex flex-column" id="col2"></div>
+    <div class="d-flex flex-column" id="col3"></div>
+  </div>
+  
   <div class="btn btn-info" id="run" style="margin-left: 20px">run</div>
   
 
