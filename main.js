@@ -2,6 +2,6 @@
 
 
 document.addEventListener('DOMContentLoaded', () => {
-  
+  const TOWERS = [[], [], []];
 
 });
