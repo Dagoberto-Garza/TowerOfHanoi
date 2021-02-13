@@ -24,15 +24,32 @@
     body {
       height: 100%;
     }
-    #center {
+
+    table {
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    td {
+      height: 600px;
+      width: 10px;
+    }
+    
+    .rod {
+      
+      width: 30px;
+      height: 450px;
+      background-color: black;
+    }
+
+    .center {
       width: 100%;
-      display: flex;
-      align-items: stretch;
+      justify-content: space-between;
     }
     .gameTower {
       flex-direction: row;
       max-width: 66%;
-      max-height: 650px;
       border-bottom: 25px solid red;
     }
     .col {
@@ -45,12 +62,23 @@
 </head>
 
 <body>
-<div id="center" class="d-flex justify-content-center">
-  <div class="d-flex justify-content-around gameTower" id="gameTower">
-    <div class="d-inline-flex col" id="col"></div>
-    <div class="d-inline-flex col" id="col2"></div>
-    <div class="d-inline-flex col" id="col3"></div>
+<!-- <div id="center" class="d-flex center">
+  <div class="d-flex gameTower" id="gameTower">
+    <div class="p-2 col" id="col"></div>
+    <div class="p-2 col" id="col2"></div>
+    <div class="p-2 col" id="col3"></div>
   </div>
+</div> -->
+<div style="border-bottom: black 25px;">
+  <table>
+    <tbody>
+      <tr>
+        <td> <div class="rod"></div> </td>
+        <td> <div class="rod"></div> </td>
+        <td> <div class="rod"></div> </td>
+      </tr>
+    </tbody>
+  </table>
 </div>
   
   
